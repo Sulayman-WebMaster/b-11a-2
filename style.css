@@ -63,6 +63,7 @@ transform: scale(1.15);
 .navBar{
     justify-content: space-between;
     padding: 20px 0;
+    gap:10px;
 }
 .logo-container{
     align-items: center;
@@ -80,7 +81,7 @@ transform: scale(1.15);
     align-items: center;
 }
 .menu-item{
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: 700;
 }
 .home{
@@ -99,10 +100,90 @@ transform: scale(1.15);
     width:62px;
     height: 62px; 
 }
-
-
-
 /* banner section */
+.banner{
+    margin: 20px 0 60px 0;
+}
+.banner-area{
+    justify-content: space-between;
+    gap:50px;
+    align-items: center;
+}
+.title-text{
+    font-weight: 4;
+}
+.banner-image img{
+ width:100%;
+}
+.title-text{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color:var(--black);
+}
+.orange-text{
+    color:var(--orange);
+}
+.sky-blue-text{
+    color:var(--sky-blue);
+}
+.description-text{
+    font-size: 1.25rem;
+    color:var(--black);
+    margin:24px 0;
+}
+.btn-banner{
+    padding:20px 60px;
+    background-color: var(--black);
+    color:var(--white);
+}
+.btn-banner:hover{
+    border: 1px solid var(--black);
+    color:var(--black);
+    background-color: var(--white);
+}
+/* standard curriculum section */
+.section-title{
+    font-size: 2.875rem;
+    font-weight: 700;
+    color:var(--black);
+    text-align: center;
+}
+.cards{
+    margin:80px 0;
+    justify-content: space-between;
+    gap:29px;
+    
+    
+    
+}
+.card{
+    border-radius: 19px;
+    padding:70px 80px;
+    flex-direction: column;
+}
+.card img{
+    width: 130px;
+    height: 130px;
+}
+.card-no-1{
+        background: linear-gradient(to bottom, rgba(222, 245, 255, 1) 0%, rgba(255, 255, 255, 0) 40%);
+        border:1px solid #DEF5FF;
+}
+.standard-curriculum{
+    margin:60px 0;
+    background-image: url(assets/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.arrows-icons{
+    gap:10px;
+    justify-content: center;
+}
+.arrows-icons img{
+    width:60px;
+}
+
 /* responsive design only for Typical Mobile */
 @media only screen and (max-width:576px){
     body{
@@ -132,4 +213,21 @@ transform: scale(1.15);
         width:30px;
         height:30px;
     }
+    /* banner section */
+    .banner-area{
+        flex-direction: column-reverse; 
+        text-align: center;
+    }
+    .banner-text{
+        font-size: 2rem;
+    }
+    .description-text{
+        font-size:0.875rem ;
+    }
+    /* standard-curriculum */
+    /* hide the arrows */
+    .arrows-icons{
+        display: none;
+    }
+    
 }
