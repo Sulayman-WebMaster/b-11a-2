@@ -1,17 +1,135 @@
 /* import or external links */
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 /* universal class for tags styles */
+*,html,body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    /* quicksand font from google font */
+    font-family: "Quicksand", serif;
+}
 a{
     text-decoration: none;
 }
 li{
     list-style: none;
 }
+/* utilies  */
+.flex{
+    display:flex;
+}
+.grid{
+    display:grid;
+}
+.display-none{
+    display: none;
+}
 /* variables */
+:root{
+    /* color */
+    --orange: #FEA301 ;
+    --black: #111111;
+    --sky-blue:#01ACFD;
+    --white: #F7F7F7;
 
-/* common styles  */
-btn-primary{
 
 }
+/* common styles  */
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.btn-primary{
+ padding:10px 60px;
+ border-radius: 12px;
+ background-color: var(--orange);
+ color:var(--white);
+ font-size:1.25rem ;
+ font-weight: 600;
+ border:none;
+ transition: transform 0.4s ease-in;
+ cursor: pointer;
+ 
+}
+.btn-primary:hover{
+color:var(--orange);
+background-color: var(--white);
+border: 1px solid var(--orange);
+transform: scale(1.15);
+}
 /* navbar styles */
+.navBar{
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.logo-container{
+    align-items: center;
+    gap:11px;        
+}
+.logo-text{
+    font-size: 2rem ;
+    text-transform: uppercase;
+    font-weight: 700;
+    color:var(--black);
+}
+.menu-items{
+    justify-content: center;
+    gap:32px;
+    align-items: center;
+}
+.menu-item{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.home{
+    color:var(--orange);
+}
+.about{
+    color:var(--sky-blue)
+}
+.facilities{
+    color: #05D4DF;
+}
+.admission{
+    color:#5D58EF;
+}
+.logo-img img{
+    width:62px;
+    height: 62px; 
+}
+
+
+
 /* banner section */
+/* responsive design only for Typical Mobile */
+@media only screen and (max-width:576px){
+    body{
+        padding:12px 16px;
+    }
+    .navBar{
+        align-items: center;
+    }
+    /* navbar  */
+    .logo-img img{
+        width:46px;
+        height: 46px;
+    }
+    .logo-text{
+        display:none;
+    }
+    .menu-item{
+        display: none;
+    }
+    .nav-button{
+        display:none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger img{
+        width:30px;
+        height:30px;
+    }
+}
