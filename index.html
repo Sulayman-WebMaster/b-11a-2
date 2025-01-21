@@ -10,8 +10,7 @@
 
 <body>
     <!-- navbar -->
-    <div class="container">
-        <header class="header">
+        <header class="header container">
             <nav class="navBar flex">
                 <div class="logo-container flex">
                     <div class="logo-img">
@@ -30,7 +29,7 @@
                         <li class="menu-item "><a class="admission" href="#">Admission</a></li>
                     </ul>
                 </div>
-                <button class="nav-button btn-primary">Contact</button>
+                <button class="nav-button btn-primary" id="btn-header">Contact</button>
                 <!-- show on mobile viewport only -->
                 <div class=" hamburger display-none">
                     <img src="assets/hamburger.png" alt="hamburger-icon">
@@ -40,7 +39,7 @@
         </header>
         <!-- banner section -->
         <div class="body-item">
-            <section class="banner">
+            <section class="banner container">
                 <div class="banner-area flex">
                     <div class="content-area">
                         <div class="title">
@@ -60,6 +59,8 @@
                 </div>
             </section>
             <!-- standard curriculum -->
+             <div class="container-fluid standard-curriculum-bg">
+                <div class="container">
             <section class="standard-curriculum">
                 <h1 class="section-title">standard Curriculum</h1>
                 <div class="cards flex">
@@ -91,8 +92,11 @@
                     </div>
                 </div>
             </section>
+        </div>
+        </div>
             <!-- our stroies section  -->
-            <section class="stories">
+             <div class="container-fluid stories-bg">
+            <section class="stories container">
                 <h1 class="stories-title">Our Stories</h1>
                 <div class="stories-area grid">
                     <div class="stories-content item-1 flex">
@@ -148,15 +152,29 @@
                 <button class="btn-primary btn-banner btn-stories">View All</button>
             </section>
         </div>
-
-
-
-
-
-
-
-
         </div>
+        <div class="container">
+            <marquee width="100%" direction="left" height="100px">
+                Children are the future. A quality education paves the way for a bright and successful life. so admission now
+                </marquee>
+        </div>
+        <div class="container-fluid bg-footer">
+            <div class="container">
+                <div class="footer-items flex">
+                    <div class="item-1"></div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+      
 </body>
 
 </html>

@@ -40,7 +40,10 @@ li{
 /* common styles  */
 .container{
     max-width: 1160px;
-    margin: 0 auto;
+    margin: 0 auto !important;
+}
+.container-fluid{
+    width:100%
 }
 .btn-primary{
  padding:10px 60px;
@@ -143,6 +146,12 @@ transform: scale(1.15);
     background-color: var(--white);
 }
 /* standard curriculum section */
+.standard-curriculum-bg{
+    background-image: url(assets/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 .section-title{
     font-size: 2.875rem;
     font-weight: 700;
@@ -160,6 +169,7 @@ transform: scale(1.15);
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
     padding:0 80px;
 }
 .card img{
@@ -204,10 +214,6 @@ transform: scale(1.15);
 }
 .standard-curriculum{
     margin:60px 0;
-    background-image: url(assets/bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 .arrows-icons{
     gap:10px;
@@ -217,11 +223,14 @@ transform: scale(1.15);
     width:60px;
 }
 /* our stories */
+.stories-bg{
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 1)), url('assets/bg.png');
+}
 .stories{
     margin:60px 0;
     text-align: center;
-    background-image: url(assets/bg.png);
-    background: linear-gradient(to top, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 1));
+    z-index: 9999;
+
 }
 .stories-area{
     margin:80px 0;
@@ -248,6 +257,7 @@ transform: scale(1.15);
 }
 .btn-stories{
     text-align: center;
+    margin-bottom: 60px;
 }
 .item-1{
     grid-row: 1/3;
@@ -294,9 +304,13 @@ transform: scale(1.15);
 }
 .des{
     margin: 0 48px;
+    margin-bottom: 34px;
     text-align: left;
 }
-
+/* footer styles */
+.bg-footer{
+    background-color: #01ACFD;
+}
 /* responsive design only for Typical Mobile */
 @media only screen and (max-width:576px){
     .body-item{
@@ -330,6 +344,9 @@ transform: scale(1.15);
         height:30px;
     }
     /* banner section */
+    .title-text{
+        font-size: 2rem;
+    }
     .banner-area{
         flex-direction: column-reverse; 
         text-align: center;
@@ -358,9 +375,23 @@ transform: scale(1.15);
     }
     
 }
-@media only screen and (min-width:576px) and (max-width:992px){
+@media only screen and (min-width:577px) and (max-width:992px){
     /* stories section responsive for meduim deviecs screen */
-
+    .title-text{
+        font-size: 2rem;
+    }
+    .description-text{
+        font-size: 0.875rem;
+    }
+    .body-item{
+        margin: 0 30px;
+    }
+    #btn-header{
+        display: none;
+    }
+ .cards{
+  flex-direction: column;
+ }
 
 
 }
