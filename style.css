@@ -312,7 +312,7 @@ transform: scale(1.15);
     background-color: #01ACFD;
 }
 .footer-items{
-    padding:125px;
+    padding:125px 0;
     justify-content: space-between;
     align-items:flex-start;
     text-align: left;
