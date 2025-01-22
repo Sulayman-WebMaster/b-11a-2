@@ -311,6 +311,58 @@ transform: scale(1.15);
 .bg-footer{
     background-color: #01ACFD;
 }
+.footer-items{
+    padding:125px;
+    justify-content: space-between;
+    align-items:flex-start;
+    text-align: left;
+    color:#FFFFFF;
+}
+.footer-logo{
+    gap:10px
+}
+.footer-item-1{
+    flex-direction: column;
+    gap:35px;
+    justify-content: end;
+}
+.footer-item-2{
+    flex-direction: column;
+}
+/* .footer-menu-item{
+    margin-bottom: 20px;
+} */
+.footer-logo img{
+width:85px;
+height: 95px;
+}
+.footer-logo-text{
+    font-size: 2.625rem;
+    font-weight: 700;
+}
+.footer-logo-des{
+    font-size: 1.25rem;
+}
+.footer-sub-title{
+    font-size:1.5rem ;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.footer-menu-item{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color:#FFFFFF;
+}
+.footer-menu{
+    flex-direction: column;
+    gap:20px;
+}
+.socials-link{
+    flex-direction: column;
+}
+.socials{
+    gap:10px;
+}
 /* responsive design only for Typical Mobile */
 @media only screen and (max-width:576px){
     .body-item{
