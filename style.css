@@ -34,8 +34,6 @@ li{
     --black: #111111;
     --sky-blue:#01ACFD;
     --white: #F7F7F7;
-
-
 }
 /* common styles  */
 .container{
@@ -170,7 +168,7 @@ transform: scale(1.15);
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    padding:0 80px;
+    padding:0 68px;
 }
 .card img{
     margin:50px 0 30px 0;
@@ -218,6 +216,17 @@ transform: scale(1.15);
 .arrows-icons{
     gap:10px;
     justify-content: center;
+}
+.arrow-1,.arrow-2{
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+.arrow-1:hover{
+    opacity: .5;
+    transform: translateX(-10px);
+}
+.arrow-2:hover{
+    opacity: .5;
+    transform: translateX(10px);
 }
 .arrows-icons img{
     width:60px;
@@ -365,8 +374,8 @@ height: 95px;
 }
 /* responsive design only for Typical Mobile */
 @media only screen and (max-width:576px){
-    .body-item{
-        margin: 0 16px;
+    .px-16{
+        padding:0 16px;
     }
     .navBar{
         align-items: center;
@@ -374,6 +383,9 @@ height: 95px;
     header{
         border: 0.5px solid var(--orange);
     }
+    /* .body-item{
+        padding: 0px 16px
+    } */
     /* navbar  */
     .logo-img img{
         width:46px;
@@ -409,10 +421,20 @@ height: 95px;
     .description-text{
         font-size:0.875rem ;
     }
+    .btn-mobile{
+        padding: 6px 24px;
+        border-radius: 8px;
+        font-size: 1rem;
+        line-height: 30px;
+    }
     /* standard-curriculum */
     .cards{
         flex-direction: column;
 
+    }
+    .curriculum-sub-title{
+        font-size: 1.5rem;
+        font-weight: 700;
     }
     /* hide the arrows */
     .arrows-icons{
@@ -425,6 +447,17 @@ height: 95px;
     .stories-area{
         grid-template-columns: repeat(2, 1fr);
     }
+    .date-holder-collage{
+        font-size: 0.571rem !important;
+        margin-top:-20px;
+    }
+    /* footer  */
+    .footer-items{
+        flex-direction: column;
+        padding:50px 20px;
+        gap:32px
+    }
+    
     
 }
 @media only screen and (min-width:577px) and (max-width:992px){
@@ -435,15 +468,19 @@ height: 95px;
     .description-text{
         font-size: 0.875rem;
     }
-    .body-item{
-        margin: 0 30px;
-    }
+    /* .body-item{
+        padding: 0 30px;
+    } */
     #btn-header{
         display: none;
     }
  .cards{
   flex-direction: column;
  }
+ .date-holder-collage, .date-holder-main{
+    font-size: 0.571rem !important;
+    margin-top:-20px;
+}
 
 
 }
