@@ -223,10 +223,12 @@ transform: scale(1.15);
 .arrow-1:hover{
     opacity: .5;
     transform: translateX(-10px);
+    cursor: pointer;
 }
 .arrow-2:hover{
     opacity: .5;
     transform: translateX(10px);
+    cursor: pointer;
 }
 .arrows-icons img{
     width:60px;
@@ -374,9 +376,9 @@ height: 95px;
 }
 /* responsive design only for Typical Mobile */
 @media only screen and (max-width:576px){
-    .px-16{
-        padding:0 16px;
-    }
+   .sectional{
+    padding: 0 16px
+   }
     .navBar{
         align-items: center;
     }
